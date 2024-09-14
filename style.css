@@ -1,0 +1,239 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.title {
+	width: 100%;
+	color: #252B42;
+}
+.container {
+	max-width: 1050px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	margin-inline: auto;
+	justify-content: center;
+	padding-block: 80px;
+	text-align: center;
+}
+
+.btn {
+	padding: 15px 40px;
+	font-size: 18px;
+	font-weight: bold;
+	position: relative;
+	display: inline-block;
+	transition: all .3s ease-in;
+	border-radius: 10px;
+	border: 0;
+	cursor: pointer;
+}
+
+.btn-1 {
+	background: #2DC071;
+	z-index: 1;
+}
+
+.btn-1::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	transition: all .3s ease;
+	border-radius: 10px;
+}
+
+.btn-1:hover::after {
+	width: 100%;
+	left: 0;
+	background: #21804d;
+}
+
+.btn-2 {
+	background: #1d4d33;
+	z-index: 1;
+}
+
+.btn-2::after {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .3s ease;
+	border-radius: 10px;
+}
+
+.btn-2:hover::after {
+	width: 100%;
+	right: 0;
+	left: auto;
+	background: #288051;
+}
+
+.btn-3 {
+	background: rgb(255,151,0);
+	z-index: 1;
+}
+
+.btn-3::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .3s ease;
+	border-radius: 10px;
+}
+
+.btn-3:hover::after {
+	height: 100%;
+	top: auto;
+	bottom: 0;
+	background-color: #eaf818;
+}
+
+.btn-4 {
+	background-color: #eaf818;
+	z-index: 1;
+}
+
+.btn-4::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .3s ease;
+	border-radius: 10px;
+}
+
+.btn-4:hover::after {
+	height: 100%;
+	top: 0;
+	bottom: auto;
+	background: rgb(255,151,0);
+}
+
+.btn-5 {
+	background-color: #a6a78f;
+	z-index: 1;
+}
+
+.btn-5::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	transition: all .3s ease;
+	transform: scale(.1);
+	border-radius: 10px;
+}
+
+.btn-5:hover::after {
+	transform: scale(1);
+	background: rgb(105, 100, 92);
+}
+
+.btn-6 {
+	background: rgb(0,172,238);
+	width: 190px;
+  height: 50px;
+  line-height: 42px;
+	padding: 0;
+}
+
+/* inner span of the button to cover the full size of the button. */
+.btn-6 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 5px;
+}
+
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+
+/* creates a vertical line */
+.btn-6:before {
+  height: 0;
+  width: 2px;
+}
+
+/* creates a horizontal line */
+.btn-6:after {
+  width: 0;
+  height: 2px;
+}
+
+.btn-6:hover{
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-6:hover:before {
+  height: 100%;
+}
+
+.btn-6:hover:after {
+  width: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgba(2,126,251,1);
+  transition: all 0.3s ease;
+}
+
+.btn-6 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-6 span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-6 span:hover:before {
+  height: 100%;
+}
+
+.btn-6 span:hover:after {
+  width: 100%;
+}
+
+.btn-7 {
+	background: rgb(6,14,131);
+	color: #fff;
+
+	&:hover {
+		background: rgb(0,3,255);
+	}
+}
